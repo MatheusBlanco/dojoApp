@@ -3,15 +3,29 @@ import * as React from 'react';
 import { Image, Platform, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import { MonoText } from '../components/StyledText';
-import { Card } from 'react-native-elements';
+import { Card, ListItem, Button, Icon } from 'react-native-elements';
 
 export default function PictureScreen() {
   return (
     <View style={styles.container}>
       <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
         
-        <View style={styles.getStartedContainer}>
-         
+        <View style={styles.photosContainer}>
+        <Card
+            title='Hai'
+            image={require('../assets/images/mom.png')}>
+                <Text style={{marginBottom:10}}>AlohaAlohaAlohaAlohaAlohaAlohaAlohaAlohaAloha</Text>
+        </Card>
+        <Card
+            title='Hai'
+            image={require('../assets/images/mom.png')}>
+                <Text style={{marginBottom:10}}>AlohaAlohaAlohaAlohaAlohaAlohaAlohaAlohaAloha</Text>
+        </Card>
+        <Card
+            title='Hai'
+            image={require('../assets/images/mom.png')}>
+                <Text style={{marginBottom:10}}>AlohaAlohaAlohaAlohaAlohaAlohaAlohaAlohaAloha</Text>
+        </Card>
         </View>
 
         <View style={styles.helpContainer}>
@@ -19,13 +33,6 @@ export default function PictureScreen() {
         </View>
       </ScrollView>
 
-      <View style={styles.tabBarInfoContainer}>
-        <Text style={styles.tabBarInfoText}>This is a tab bar. You can edit it in:</Text>
-
-        <View style={[styles.codeHighlightContainer, styles.navigationFilename]}>
-          <MonoText style={styles.codeHighlightText}>navigation/BottomTabNavigator.js</MonoText>
-        </View>
-      </View>
     </View>
   );
 }
@@ -71,7 +78,7 @@ const styles = StyleSheet.create({
     marginTop: 3,
     marginLeft: -10,
   },
-  getStartedContainer: {
+  photosContainer: {
     alignItems: 'center',
     marginHorizontal: 50,
   },
