@@ -5,11 +5,11 @@ export default function(containerRef) {
   return useLinking(containerRef, {
     prefixes: [Linking.makeUrl('/')],
     config: {
-      Root: {
-        path: 'root',
+      Fotos: {
+        path: 'fotos',
         screens: {
-          Home: 'home',
-          Links: 'links',
+          Picture: 'picture',
+          Message: 'message',
           Settings: 'settings',
         },
       },
